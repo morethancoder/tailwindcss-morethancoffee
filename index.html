@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="text-gray-700 font-body">
+    <div>
+      <!--wrapper-->
+      <div class="border-b-2 md:flex justify-between items-center p-4">
+        <div class="flex justify-between">
+          <h1 class="text-grey-600 text-sm md:text-xl font-bold uppercase">
+            <a> more than coffee </a>
+          </h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 md:hidden cursor-pointer"
+            id="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+        <div class="md:text-right text-center py-5">
+          <a
+            class="btn md:border-2 border-pr hover:bg-pr text-pr hover:text-white"
+            href="#"
+            >Log In</a
+          >
+          <a
+            class="btn md:border-2 border-pr hover:bg-pr text-pr hover:text-white ml-2"
+            href="#"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <div class="md:grid grid-cols-4">
+        <nav id="menu" class="md:block hidden">
+          <ul class="text-sm uppercase text-right mt-5">
+            <li
+              class="flex items-center gap-2 justify-end font-bold mb-5 border-r-4 border-pr p-2"
+            >
+              <a class="" href="#">
+                <span>Home</span>
+              </a>
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </li>
+            <li class="mb-5 hover:font-semibold p-2">
+              <a class="flex items-center gap-2 justify-end" href="#">
+                <span>About</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="mb-5 hover:font-semibold p-2">
+              <a class="flex items-center gap-2 justify-end" href="#">
+                <span>Contact</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!--end nav-->
+        </nav>
+
+        <main class="p-12 bg-slate-100 col-span-3">
+          <header>
+            <h2 class="text-2xl sm:text-3xl md:text-5xl mb-5">
+              Coffee for Devs
+            </h2>
+            <h3 class="text-lg sm:text-xl md:text-2xl mb-10">
+              Boost your work
+            </h3>
+          </header>
+
+          <!-- <div class="flex items-center justify-end">
+            <div class="bg-red-500 w-6 h-6"></div>
+            <div class="bg-green-500 w-6 h-8"></div>
+            <div class="bg-blue-500 w-6 h-12"></div>
+          </div> -->
+
+          <div>
+            <h4
+              class="text-sm font-medium border-l-2 border-gray-500 pl-[10px] my-11"
+            >
+              latest orders
+            </h4>
+            <div class="block sm:grid grid-cols-3 md:flex gap-[40px]">
+              <div class="card">
+                <!--Card -->
+                <img
+                  class="w-full h-32 object-cover"
+                  src="./img/hot choclate.jpg"
+                />
+                <div class="m-5">
+                  <span class="text-gray-600 font-medium py-4"
+                    >Hot Choclate Coffee</span
+                  >
+                  <span class="block uppercase font-bold text-sm text-gray-400"
+                    >Price 5$</span
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <!--Card -->
+                <img class="w-full h-40 object-cover" src="./img/mint.jpg" />
+                <div class="m-5">
+                  <span class="text-gray-600 font-medium py-4"
+                    >Mint Coffee</span
+                  >
+                  <span class="block uppercase font-bold text-sm text-gray-400"
+                    >Price 7$</span
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <!--Card -->
+                <img class="w-full h-40 object-cover" src="./img/choco.jpg" />
+                <div class="m-5">
+                  <span class="text-gray-600 font-medium py-4"
+                    >Just Coffee</span
+                  >
+                  <span class="block uppercase font-bold text-sm text-gray-400"
+                    >Price 2$</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 text-sm text-center font-semibold hover:scale-110">
+              <a class="btn bg-slate-400 text-white" href="#">Load More</a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
